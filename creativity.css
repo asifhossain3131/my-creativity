@@ -1,0 +1,148 @@
+/* Login styles  */
+.login{
+    background: url(images/grad.jpg);
+    width: 100%;
+}
+.login-container{
+    display: flex;
+    flex-direction: column; border: none; width: 50%; height: 20em;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(0deg, rgba(20, 87, 211, 0), rgb(51, 255, 0));
+    margin: 0 auto;
+}
+.user-name{
+border: none;
+width: 30%;
+height: 2em;
+   border-radius: 5%;
+   background-color: lightgray;
+   color: black;
+   font-weight: 600;
+
+
+}
+.pass{
+    border: none;
+    width: 30%;
+    height: 2em;
+       border-radius: 5%;
+       background-color: lightgray;
+       color: black;
+       font-weight: 600;
+    
+    
+}
+.login-btn{
+    border:none;
+    margin-top: 0.5em;
+    width: 40%;
+ height: 2em;
+    border-radius: 5%;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+
+/* football styles */
+img{
+    width: 75%;
+}
+.player{
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: navy;
+    color: white;
+    font-size: 15px;
+  
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border: 2px solid lightgray;
+    }
+    .player:hover{
+        background-color: violet;
+    }
+    .football-title{
+        text-align: center; font-weight: 600; font-size: 5em;
+        background-color: blanchedalmond;
+        margin-top: 2.5em;
+    }
+    button{
+        border-radius: 10px; 
+        border: none;
+        background-color: #008000;
+        animation: sliding 0.5s infinite running 0.5s  ;
+        
+    }
+    @media screen and (max-width: 576px){
+       .container{
+        display: grid;
+    grid-template-columns: repeat(1, 1fr);
+       }
+    }
+    @media  screen and (min-width:577px) and (max-width:992px) {
+        .container{
+            display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@keyframes sliding {
+    from{background-color: green;}
+    to{background-color: yellow;}
+}
+/* calender */
+.calender-container{
+
+display: grid;
+grid-template-columns: repeat(7,1fr);
+
+gap: 5px;
+
+
+}
+.date{
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.day{
+  
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date:hover{
+    background-color: green;
+    border-radius: 50%;
+}
+.calender{
+    width: 400px; height: 400px;
+    margin: 200px auto;
+    background-color: whitesmoke;
+   
+}
+.calender-top{
+    display: flex;
+    justify-content: space-between;
+}
+.month{
+    margin-left: 1em;
+   
+}
+.icon{
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
